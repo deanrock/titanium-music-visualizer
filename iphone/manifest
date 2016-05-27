@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: music-visualizer
+author: deanrock
+license: Specify your license
+copyright: Copyright (c) 2016 by deanrock
+
+# these should not be edited
+name: music-visualizer
+moduleid: com.deanrock.musicvisualizer
+guid: 166d2791-3e2a-4943-b770-6dd7235d7771
+platform: iphone
+minsdk: 5.2.2.GA
