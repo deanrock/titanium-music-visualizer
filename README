@@ -1,35 +1,20 @@
-Appcelerator Titanium Mobile Module Project
+Titanium Music Visualizer Module
 ===========================================
 
-This is a skeleton Titanium Mobile Mobile module project.
-
-
-MODULE NAMING
--------------
-
-Choose a unique module id for your module.  This ID usually follows a namespace
-convention using DNS notation.  For example, com.appcelerator.module.test.  This
-ID can only be used once by all public modules in Titanium.
+This is a Titanium module for iOS intended to play music and present visual animation.
 
 
 GET STARTED
 ------------
 
-1. Edit manifest with the appropriate details about your module.
-2. Edit LICENSE to add your license details.
-3. Place any assets (such as PNG files) that are required anywhere in the module folder.
-4. Edit the timodule.json and configure desired settings.
-5. Code and build.
+1. Copy some music file to examples/music-visualizer-example/assets/ios/example.mp3.
+2. Go to iphone/ folder and run ./build.sh
 
 
-DOCUMENTATION FOR YOUR MODULE
------------------------------
+iphone/build.sh
+---------------
 
-You should provide at least minimal documentation for your module in `documentation` folder using the Markdown syntax.
-
-For more information on the Markdown syntax, refer to this documentation at:
-
-<http://daringfireball.net/projects/markdown/>
+This script will build iphone native module, build example application, and run it in simulator.
 
 
 TEST HARNESS EXAMPLE FOR YOUR MODULE

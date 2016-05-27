@@ -1,0 +1,5 @@
+<Alloy>
+	<Window class="container">
+		<Module id="visualizer" module="com.deanrock.musicvisualizer" method="createView" />
+	</Window>
+</Alloy>

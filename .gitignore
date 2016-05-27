@@ -2,4 +2,6 @@
 build
 *.xcuserdatad
 *.tmproj
-
+com.deanrock.musicvisualizer-iphone-*.zip
+/iphone/music-visualizer.xcodeproj/project.xcworkspace/
+example.mp3

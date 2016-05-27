@@ -22,6 +22,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		056D0CA51CF8BE59005A6E51 /* ComDeanrockMusicvisualizerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 056D0CA31CF8BE59005A6E51 /* ComDeanrockMusicvisualizerView.h */; };
+		056D0CA61CF8BE59005A6E51 /* ComDeanrockMusicvisualizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D0CA41CF8BE59005A6E51 /* ComDeanrockMusicvisualizerView.m */; };
+		056D0CAB1CF8BE82005A6E51 /* ComDeanrockMusicvisualizerViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 056D0CA71CF8BE82005A6E51 /* ComDeanrockMusicvisualizerViewProxy.h */; };
+		056D0CAC1CF8BE82005A6E51 /* ComDeanrockMusicvisualizerViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D0CA81CF8BE82005A6E51 /* ComDeanrockMusicvisualizerViewProxy.m */; };
+		056D0CAD1CF8BE82005A6E51 /* SCSiriWaveformView.h in Headers */ = {isa = PBXBuildFile; fileRef = 056D0CA91CF8BE82005A6E51 /* SCSiriWaveformView.h */; };
+		056D0CAE1CF8BE82005A6E51 /* SCSiriWaveformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D0CAA1CF8BE82005A6E51 /* SCSiriWaveformView.m */; };
+		056D0CB01CF8D2BA005A6E51 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056D0CAF1CF8D2BA005A6E51 /* AVFoundation.framework */; };
 		24DD6CF91134B3F500162E58 /* ComDeanrockMusicvisualizerModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* ComDeanrockMusicvisualizerModule.h */; };
 		24DD6CFA1134B3F500162E58 /* ComDeanrockMusicvisualizerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComDeanrockMusicvisualizerModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* ComDeanrockMusicvisualizerModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComDeanrockMusicvisualizerModuleAssets.h */; };
@@ -41,14 +48,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24DD6CF71134B3F500162E58 /* ComDeanrockMusicvisualizerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComDeanrockMusicvisualizerModule.h"; path = "Classes/ComDeanrockMusicvisualizerModule.h"; sourceTree = "<group>"; };
-		24DD6CF81134B3F500162E58 /* ComDeanrockMusicvisualizerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ComDeanrockMusicvisualizerModule.m"; path = "Classes/ComDeanrockMusicvisualizerModule.m"; sourceTree = "<group>"; };
+		056D0CA31CF8BE59005A6E51 /* ComDeanrockMusicvisualizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComDeanrockMusicvisualizerView.h; path = Classes/ComDeanrockMusicvisualizerView.h; sourceTree = "<group>"; };
+		056D0CA41CF8BE59005A6E51 /* ComDeanrockMusicvisualizerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComDeanrockMusicvisualizerView.m; path = Classes/ComDeanrockMusicvisualizerView.m; sourceTree = "<group>"; };
+		056D0CA71CF8BE82005A6E51 /* ComDeanrockMusicvisualizerViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComDeanrockMusicvisualizerViewProxy.h; path = Classes/ComDeanrockMusicvisualizerViewProxy.h; sourceTree = "<group>"; };
+		056D0CA81CF8BE82005A6E51 /* ComDeanrockMusicvisualizerViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComDeanrockMusicvisualizerViewProxy.m; path = Classes/ComDeanrockMusicvisualizerViewProxy.m; sourceTree = "<group>"; };
+		056D0CA91CF8BE82005A6E51 /* SCSiriWaveformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSiriWaveformView.h; path = Classes/SCSiriWaveformView.h; sourceTree = "<group>"; };
+		056D0CAA1CF8BE82005A6E51 /* SCSiriWaveformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSiriWaveformView.m; path = Classes/SCSiriWaveformView.m; sourceTree = "<group>"; };
+		056D0CAF1CF8D2BA005A6E51 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		24DD6CF71134B3F500162E58 /* ComDeanrockMusicvisualizerModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComDeanrockMusicvisualizerModule.h; path = Classes/ComDeanrockMusicvisualizerModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* ComDeanrockMusicvisualizerModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComDeanrockMusicvisualizerModule.m; path = Classes/ComDeanrockMusicvisualizerModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
-		24DE9E0F11C5FE74003F90F6 /* ComDeanrockMusicvisualizerModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ComDeanrockMusicvisualizerModuleAssets.h"; path = "Classes/ComDeanrockMusicvisualizerModuleAssets.h"; sourceTree = "<group>"; };
-		24DE9E1011C5FE74003F90F6 /* ComDeanrockMusicvisualizerModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ComDeanrockMusicvisualizerModuleAssets.m"; path = "Classes/ComDeanrockMusicvisualizerModuleAssets.m"; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* ComDeanrockMusicvisualizer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ComDeanrockMusicvisualizer_Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		24DE9E0F11C5FE74003F90F6 /* ComDeanrockMusicvisualizerModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComDeanrockMusicvisualizerModuleAssets.h; path = Classes/ComDeanrockMusicvisualizerModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* ComDeanrockMusicvisualizerModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComDeanrockMusicvisualizerModuleAssets.m; path = Classes/ComDeanrockMusicvisualizerModuleAssets.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* ComDeanrockMusicvisualizer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComDeanrockMusicvisualizer_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2AAC07E0554694100DB518D /* libComDeanrockMusicvisualizer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libComDeanrockMusicvisualizer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC07E0554694100DB518D /* libComDeanrockMusicvisualizer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libComDeanrockMusicvisualizer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056D0CB01CF8D2BA005A6E51 /* AVFoundation.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +100,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				056D0CAF1CF8D2BA005A6E51 /* AVFoundation.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -93,7 +109,13 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				056D0CA71CF8BE82005A6E51 /* ComDeanrockMusicvisualizerViewProxy.h */,
+				056D0CA81CF8BE82005A6E51 /* ComDeanrockMusicvisualizerViewProxy.m */,
+				056D0CA91CF8BE82005A6E51 /* SCSiriWaveformView.h */,
+				056D0CAA1CF8BE82005A6E51 /* SCSiriWaveformView.m */,
 				24DE9E0F11C5FE74003F90F6 /* ComDeanrockMusicvisualizerModuleAssets.h */,
+				056D0CA31CF8BE59005A6E51 /* ComDeanrockMusicvisualizerView.h */,
+				056D0CA41CF8BE59005A6E51 /* ComDeanrockMusicvisualizerView.m */,
 				24DE9E1011C5FE74003F90F6 /* ComDeanrockMusicvisualizerModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* ComDeanrockMusicvisualizerModule.h */,
 				24DD6CF81134B3F500162E58 /* ComDeanrockMusicvisualizerModule.m */,
@@ -117,9 +139,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056D0CAB1CF8BE82005A6E51 /* ComDeanrockMusicvisualizerViewProxy.h in Headers */,
+				056D0CAD1CF8BE82005A6E51 /* SCSiriWaveformView.h in Headers */,
 				AA747D9F0F9514B9006C5449 /* ComDeanrockMusicvisualizer_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* ComDeanrockMusicvisualizerModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* ComDeanrockMusicvisualizerModuleAssets.h in Headers */,
+				056D0CA51CF8BE59005A6E51 /* ComDeanrockMusicvisualizerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +220,9 @@
 			files = (
 				24DD6CFA1134B3F500162E58 /* ComDeanrockMusicvisualizerModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* ComDeanrockMusicvisualizerModuleAssets.m in Sources */,
+				056D0CAC1CF8BE82005A6E51 /* ComDeanrockMusicvisualizerViewProxy.m in Sources */,
+				056D0CA61CF8BE59005A6E51 /* ComDeanrockMusicvisualizerView.m in Sources */,
+				056D0CAE1CF8BE82005A6E51 /* SCSiriWaveformView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,11 +243,11 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/ComDeanrockMusicvisualizer.dst";
+				DSTROOT = /tmp/ComDeanrockMusicvisualizer.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComDeanrockMusicvisualizer_Prefix.pch";
+				GCC_PREFIX_HEADER = ComDeanrockMusicvisualizer_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -239,7 +267,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComDeanrockMusicvisualizer";
+				PRODUCT_NAME = ComDeanrockMusicvisualizer;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -253,11 +281,11 @@
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				DSTROOT = "/tmp/ComDeanrockMusicvisualizer.dst";
+				DSTROOT = /tmp/ComDeanrockMusicvisualizer.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComDeanrockMusicvisualizer_Prefix.pch";
+				GCC_PREFIX_HEADER = ComDeanrockMusicvisualizer_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -274,7 +302,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComDeanrockMusicvisualizer";
+				PRODUCT_NAME = ComDeanrockMusicvisualizer;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -288,11 +316,11 @@
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DSTROOT = "/tmp/ComDeanrockMusicvisualizer.dst";
+				DSTROOT = /tmp/ComDeanrockMusicvisualizer.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComDeanrockMusicvisualizer_Prefix.pch";
+				GCC_PREFIX_HEADER = ComDeanrockMusicvisualizer_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -311,7 +339,7 @@
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComDeanrockMusicvisualizer";
+				PRODUCT_NAME = ComDeanrockMusicvisualizer;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
@@ -326,11 +354,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LIBRARY = "libstdc++";
-				DSTROOT = "/tmp/ComDeanrockMusicvisualizer.dst";
+				DSTROOT = /tmp/ComDeanrockMusicvisualizer.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ComDeanrockMusicvisualizer_Prefix.pch";
+				GCC_PREFIX_HEADER = ComDeanrockMusicvisualizer_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -346,7 +374,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "ComDeanrockMusicvisualizer";
+				PRODUCT_NAME = ComDeanrockMusicvisualizer;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
