@@ -52,25 +52,80 @@
 }
 
 #pragma mark public methods
-- (bool)play:(id)args {
+- (id)load:(id)args {
+    ENSURE_SINGLE_ARG(args, NSString);
+    
+    NSLog(@"[INFO] loading audio file: %@", args);
+    NSURL *url = [NSURL URLWithString:args];
+    
+    if (!url) {
+        NSLog(@"[ERROR] malformed URL");
+        return NUMBOOL(false);
+    }
+    
     NSError *error;
     
-    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:[[NSBundle mainBundle] URLForResource:@"example" withExtension:@"mp3"] error:&error];
+    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
     if(error) {
         NSLog(@"[ERROR] could not create player %@", error);
-        return;
+        return NUMBOOL(false);
     }
     
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:&error];
     
     if (error) {
         NSLog(@"[ERROR] error setting category: %@", [error description]);
-        return;
+        return NUMBOOL(false);
     }
     
     [self.player prepareToPlay];
     [self.player setMeteringEnabled:YES];
+    
+    return NUMBOOL(true);
+}
+
+- (void)play:(id)args {
+    if (!self.player) {
+        return;
+    }
+    
     [self.player play];
+}
+
+- (void)pause:(id)args
+{
+    if (!self.player) {
+        return;
+    }
+    
+    [self.player pause];
+}
+
+- (void)seek:(id)args
+{
+    if (!self.player) {
+        return;
+    }
+
+    [self.player setCurrentTime:[args floatValue]];
+}
+
+- (id)getCurrentPosition:(id)args
+{
+    if (!self.player) {
+        return NUMFLOAT(0);
+    }
+    
+    return NUMFLOAT((Float64)self.player.currentTime);
+}
+
+- (id)getDuration:(id)args
+{
+    if (!self.player) {
+        return NUMFLOAT(0);
+    }
+    
+    return NUMFLOAT((Float64)self.player.duration);
 }
 
 #pragma mark - Private

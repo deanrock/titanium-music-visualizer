@@ -1,5 +1,13 @@
 <Alloy>
 	<Window class="container">
-		<Module id="visualizer" module="com.deanrock.musicvisualizer" method="createView" />
+		<View layout="vertical">
+			<Module id="visualizer" top="0" height="80%" module="com.deanrock.musicvisualizer" method="createView" />
+			<View layout="horizontal">
+				<Label text="----" id="label"></Label>
+				<Button title="Play" id="play"></Button>
+				<Button title="Pause" id="pause"></Button>
+				<Button title="Seek" id="seek"></Button>
+			</View>
+		</View>
 	</Window>
 </Alloy>

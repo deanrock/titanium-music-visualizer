@@ -10,4 +10,9 @@
 @interface ComDeanrockMusicvisualizerViewProxy : TiViewProxy
 @property(copy) NSString* fileName;
 - (void)play:(id)args;
+- (void)pause:(id)args;
+- (void)seek:(id)args;
+- (id)getCurrentPosition:(id)args;
+- (id)getDuration:(id)args;
+- (id)load:(id)args;
 @end

@@ -1,7 +1,27 @@
-function doClick(e) {
-    alert($.label.text);
-}
-
 $.index.open();
 
-$.visualizer.play();
+var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,'example.mp3');
+
+if ($.visualizer.load(file.nativePath)) {
+	$.play.addEventListener('click', function(e)
+	{
+		$.visualizer.play();
+	});
+
+	$.pause.addEventListener('click', function(e)
+	{
+		$.visualizer.pause();
+	});
+
+	$.seek.addEventListener('click', function(e)
+	{
+		$.visualizer.seek(120.0);
+	});
+
+	setInterval(function(){
+	   // check position
+	   $.label.text = $.visualizer.getCurrentPosition().toFixed(2) + ' / ' + $.visualizer.getDuration().toFixed(2);
+	}, 100);
+}else{
+	$.label.text = 'cannot load specified file';
+}

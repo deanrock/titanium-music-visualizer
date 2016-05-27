@@ -2,7 +2,7 @@
 
 ## Description
 
-TODO: Enter your module description here
+This is a Titanium module for iOS intended to play music and present visual animation.
 
 ## Accessing the music-visualizer Module
 
@@ -10,30 +10,40 @@ To access this module from JavaScript, you would do the following:
 
     var music_visualizer = require("com.deanrock.musicvisualizer");
 
-The music_visualizer variable is a reference to the Module object.
+    var view = music_visualizer.createView({ });
+	win.add(view);
+
+The music_visualizer variable is a reference to the Module object, and view variable is a reference to the UIView object.
 
 ## Reference
 
-TODO: If your module has an API, you should document
-the reference here.
+### music_visualizer.load(filepath)
 
-### music_visualizer.function
+- Loads audio file from specified path `filepath`.
+- Returns `true` on success, and `false` on failure.
 
-TODO: This is an example of a module function.
 
-### music_visualizer.property
+### music_visualizer.play()
 
-TODO: This is an example of a module property.
+Resumes playback of audio file.
+
+
+### music_visualizer.pause()
+
+Pauses playback of audio file.
+
+### music_visualizer.seek(position)
+
+Seeks position of playback to `position`. `position` parameter expects position in seconds as float number.
+
+### music_visualizer.getCurrentPosition()
+
+Returns current position of playback as float value.
+
+### music_visualizer.getDuration()
+
+Returns duration of audio file as float value.
 
 ## Usage
 
-TODO: Enter your usage example here
-
-## Author
-
-TODO: Enter your author name, email and other contact
-details you want to share here.
-
-## License
-
-TODO: Enter your license/legal information here.
+Please check example in examples/music-visualizer-example/ folder.

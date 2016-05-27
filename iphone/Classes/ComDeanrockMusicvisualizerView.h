@@ -14,5 +14,10 @@
 @property (nonatomic, strong) SCSiriWaveformView *waveformView;
 @property (nonatomic, strong) AVAudioPlayer *player;
 
-- (bool)play:(id)args;
+- (void)play:(id)args;
+- (void)pause:(id)args;
+- (void)seek:(id)args;
+- (id)getCurrentPosition:(id)args;
+- (id)getDuration:(id)args;
+- (id)load:(id)args;
 @end
