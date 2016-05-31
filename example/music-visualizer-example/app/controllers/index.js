@@ -18,6 +18,16 @@ if ($.visualizer.load(file.nativePath)) {
 		$.visualizer.seek(120.0);
 	});
 
+	$.mute.addEventListener('click', function(e)
+	{
+		$.visualizer.setVolume(0.0);
+	});
+
+	$.unmute.addEventListener('click', function(e)
+	{
+		$.visualizer.setVolume(1.0);
+	});
+
 	setInterval(function(){
 	   // check position
 	   $.label.text = $.visualizer.getCurrentPosition().toFixed(2) + ' / ' + $.visualizer.getDuration().toFixed(2);

@@ -21,6 +21,7 @@
 USE_VIEW_FOR_UI_METHOD(play)
 USE_VIEW_FOR_UI_METHOD(pause)
 USE_VIEW_FOR_UI_METHOD(seek)
+USE_VIEW_FOR_UI_METHOD(setVolume)
 
 - (id)getCurrentPosition:(id)args {
     return [(ComDeanrockMusicvisualizerView*)[self view] getCurrentPosition:args];

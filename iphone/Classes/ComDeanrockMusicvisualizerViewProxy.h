@@ -12,6 +12,7 @@
 - (void)play:(id)args;
 - (void)pause:(id)args;
 - (void)seek:(id)args;
+- (void)setVolume:(id)args;
 - (id)getCurrentPosition:(id)args;
 - (id)getDuration:(id)args;
 - (id)load:(id)args;

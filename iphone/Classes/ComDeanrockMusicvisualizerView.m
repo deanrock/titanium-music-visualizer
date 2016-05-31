@@ -119,6 +119,17 @@
     [self.player setCurrentTime:[args floatValue]];
 }
 
+- (void)setVolume:(id)args
+{
+    ENSURE_SINGLE_ARG(args, NSNumber);
+
+    if (!self.player) {
+        return;
+    }
+
+    [self.player setVolume:[args floatValue]];
+}
+
 - (id)getCurrentPosition:(id)args
 {
     if (!self.player) {
