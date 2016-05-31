@@ -13,6 +13,7 @@
 @interface ComDeanrockMusicvisualizerView : TiUIView
 @property (nonatomic, strong) SCSiriWaveformView *waveformView;
 @property (nonatomic, strong) AVAudioPlayer *player;
+@property (nonatomic, strong) CADisplayLink *displaylink;
 
 - (void)play:(id)args;
 - (void)pause:(id)args;

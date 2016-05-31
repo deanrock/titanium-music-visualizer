@@ -15,8 +15,8 @@
     self.waveformView = [[SCSiriWaveformView alloc] initWithFrame:[self frame]];
     [self addSubview:self.waveformView];
     
-    CADisplayLink *displaylink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateMeters)];
-    [displaylink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+    self.displaylink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateMeters)];
+    [self.displaylink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
     
     [self.waveformView setWaveColor:[UIColor whiteColor]];
     [self.waveformView setPrimaryWaveLineWidth:3.0f];
@@ -42,6 +42,13 @@
 {
     // Deallocates the view
     RELEASE_TO_NIL(self.waveformView);
+    RELEASE_TO_NIL(self.player);
+
+    if (self.displaylink != nil) {
+        [self.displaylink invalidate];
+        RELEASE_TO_NIL(self.displaylink);
+    }
+
     [super dealloc];
 }
 
@@ -103,6 +110,8 @@
 
 - (void)seek:(id)args
 {
+    ENSURE_SINGLE_ARG(args, NSNumber);
+
     if (!self.player) {
         return;
     }
@@ -126,6 +135,11 @@
     }
     
     return NUMFLOAT((Float64)self.player.duration);
+}
+
+-(void)setLineColor_:(id)color
+{
+    self.waveformView.waveColor = [[TiUtils colorValue:color] _color];
 }
 
 #pragma mark - Private
