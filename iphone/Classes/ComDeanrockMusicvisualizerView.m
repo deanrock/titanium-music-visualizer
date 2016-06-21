@@ -19,8 +19,6 @@
     [self.displaylink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
     
     [self.waveformView setWaveColor:[UIColor whiteColor]];
-    [self.waveformView setPrimaryWaveLineWidth:3.0f];
-    [self.waveformView setSecondaryWaveLineWidth:1.0];
 
     [super initializeState];
 }
