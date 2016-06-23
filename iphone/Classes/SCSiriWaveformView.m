@@ -30,6 +30,7 @@ static const CGFloat kDefaultSecondaryLineWidth = 0.5f;
 @property (nonatomic, strong) NSArray* phaseShiftForWaves;
 @property (strong, nonatomic) UIColor *waveFillColor;
 @property (strong, nonatomic) UIColor *waveStrokeColor;
+@property (strong, nonatomic) NSArray *opacity;
 
 @end
 
@@ -57,16 +58,18 @@ static const CGFloat kDefaultSecondaryLineWidth = 0.5f;
 }
 
 -(void)setup {
+    self.opacity = @[@(0.5),@(0.75),@(1.0)];
+    
     self.waveColor = [UIColor colorWithRed:85.0/255.0 green:209.0/255.0 blue:196.0/255.0 alpha:1.0];
     self.backgroundColor = [UIColor clearColor];
     
-    self.frequencyForWaves = @[@(kDefaultFrequency),@(kDefaultFrequency*0.5),@(kDefaultFrequency*1.3)];
+    self.frequencyForWaves = @[@(kDefaultFrequency*0.5),@(kDefaultFrequency),@(kDefaultFrequency*1.3)];
     
     self.amplitude = kDefaultAmplitude;
     self.idleAmplitude = kDefaultIdleAmplitude;
     
     self.numberOfWaves = kDefaultNumberOfWaves;
-    self.phaseShiftForWaves = @[@(kDefaultPhaseShift),@(kDefaultPhaseShift*0.8),@(kDefaultPhaseShift*1.3)];
+    self.phaseShiftForWaves = @[@(kDefaultPhaseShift*0.8),@(kDefaultPhaseShift),@(kDefaultPhaseShift*1.3)];
     self.density = kDefaultDensity;
     
     self.primaryWaveLineWidth = kDefaultPrimaryLineWidth;
@@ -123,7 +126,7 @@ static const CGFloat kDefaultSecondaryLineWidth = 0.5f;
         else {
             [[self.waveStrokeColor colorWithAlphaComponent:multiplier] set];
         }
-        [[self.waveFillColor colorWithAlphaComponent:multiplier] setFill];
+        [[self.waveFillColor colorWithAlphaComponent:multiplier*[self.opacity[i]floatValue]] setFill];
         
         for (CGFloat x = 0; x<width +6.0 + self.density; x += self.density) {
             // We use a parable to scale the sinus wave, that has its peak in the middle of the view.
