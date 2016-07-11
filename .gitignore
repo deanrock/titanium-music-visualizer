@@ -5,3 +5,11 @@ build
 com.deanrock.musicvisualizer-iphone-*.zip
 /iphone/music-visualizer.xcodeproj/project.xcworkspace/
 example.mp3
+/android/dist/
+/android/example/
+/android/documentation/
+/android/libs/
+/android/Resources/
+/android/.settings/
+/android/.classpath
+/android/.project

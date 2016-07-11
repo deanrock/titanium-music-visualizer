@@ -44,6 +44,10 @@ Returns current position of playback as float value.
 
 Returns duration of audio file as float value.
 
+### music_visualizer.setVolume(volume)
+
+Sets volume to `volume` with possible range from 0.0 (silent) to 1.0 (max volume).
+
 ## Usage
 
 Please check example in examples/music-visualizer-example/ folder.

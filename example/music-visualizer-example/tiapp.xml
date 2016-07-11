@@ -38,9 +38,18 @@
 			</dict>
 		</plist>
 	</ios>
+	<android 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <manifest>
+      <uses-permission android:name="android.permission.INTERNET"/>
+      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+      <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    </manifest>
+  </android>
 	<modules>
-		<module platform="iphone">com.deanrock.musicvisualizer</module>
-	</modules>
+    <module platform="iphone">com.deanrock.musicvisualizer</module>
+    <module platform="android">com.deanrock.musicvisualizer</module>
+  </modules>
 	<deployment-targets>
 		<target device="android">true</target>
 		<target device="ipad">true</target>
@@ -48,7 +57,7 @@
 		<target device="mobileweb">true</target>
 		<target device="windows">true</target>
 	</deployment-targets>
-	<sdk-version>5.2.2.GA</sdk-version>
+	<sdk-version>5.4.0.v20160705213725</sdk-version>
 <plugins><plugin version="1.0">ti.alloy</plugin>
 </plugins>
 </ti:app>

@@ -1,8 +1,37 @@
 $.index.open();
 
 var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory,'example.mp3');
+var path = file.nativePath;
 
-if ($.visualizer.load(file.nativePath)) {
+if (OS_ANDROID) {
+	path = "/sdcard/example.mp3";
+
+	var audioPermission = "android.permission.RECORD_AUDIO";
+	var hasAudioPerm = Ti.Android.hasPermission(audioPermission);
+	 
+	var storagePermission = "android.permission.READ_EXTERNAL_STORAGE";
+	var hasStoragePerm = Ti.Android.hasPermission(storagePermission);
+	 
+	var permissionsToRequest = [];
+	if (!hasAudioPerm) {
+	    permissionsToRequest.push(audioPermission);
+	} 
+	if (!hasStoragePerm) {
+	    permissionsToRequest.push(storagePermission);
+	} 
+	if (permissionsToRequest.length > 0) {
+	    Ti.Android.requestPermissions(permissionsToRequest, function(e) {
+	        if (e.success) {
+	            Ti.API.info("SUCCESS");
+	        } else {
+	            Ti.API.info("ERROR: " + e.error);
+	        }
+	    });
+	}
+}
+
+if ($.visualizer.load(path)) {
+	$.visualizer.lineColor = "blue";
 	$.play.addEventListener('click', function(e)
 	{
 		$.visualizer.play();
