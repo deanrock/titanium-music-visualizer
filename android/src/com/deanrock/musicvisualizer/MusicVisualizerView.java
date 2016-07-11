@@ -199,14 +199,10 @@ public class MusicVisualizerView extends TiUIView implements MediaController.Med
         File file = new File(path);
         Log.d(LCAT, "file exists: " + file.exists());
 
-        if (!file.exists()) {
-            return false;
-        }
-
         try {
             mMediaPlayer.setDataSource(path);
             mMediaPlayer.prepare();
-            mMediaPlayer.start();
+            //mMediaPlayer.start();
         }catch(IOException exception) {
             Log.d("error", "IOException: " + exception);
             return false;
